@@ -1,0 +1,71 @@
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .bg-violet {
+        border-radius: 0px !important;
+        border-top-left-radius: 20px !important;
+        border-top-right-radius: 20px !important;
+    }
+
+    .logo {
+        width: 250px;
+        margin-top: 2vh !important;
+        margin-bottom: 5vh !important;
+    }
+
+    .mt-50 {
+        margin-top: 2vh !important;
+    }
+}
+
+.bg-violet {
+    background-color: #a16ee7;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+
+.box-shadow {
+    box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.logo {
+    width: 250px;
+    margin-top: 10vh;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+}
+
+
+.normal-margin {
+    padding: 20px;
+}
+
+.btn-violet {
+    border-radius: 18px;
+    background-color: #a16ee7;
+    color: white;
+}
+
+.btn-violet:hover {
+    background-color: #9b59b6;
+    color: white;
+}
+
+.text-violet {
+    color: #9b59b6;
+}
+
+.text-light-violet {
+    color: #a16ee7;
+}
+
+.mt-50 {
+    margin-top: 20vh;
+}

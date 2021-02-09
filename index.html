@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sign In</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Place your stylesheet here-->
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main role="main" class="container">
+        <div class="row box-shadow mt-50">
+            <div class="col-md-6 bg-violet text-center text-white">
+                <h2 class="mt-3">EG Web Solutions</h2>
+                <h5>Your one stop IT solutions</h5>
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <div class="footer text-center mt-5">
+                    EG Web Solutions © 2021
+                </div>
+            </div>
+            <div class="col-md-6 text-center normal-margin">
+                <div id="sign-in-form">
+                    <img src="images/sign-in.png" class="mt-5" width="300px">
+                    <h1 class="text-violet">Sign In</h1>
+                    <div class="row mt-4">
+                        <div class="offset-md-2 col-md-8">
+                            <form action="" method="post">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                                </div>
+                                <button type="submit" name="sign-in" class="btn btn-violet btn-block">SIGN IN</button>
+                            </form>
+
+                            <p><span class="text-light-violet">Not registered?</span> <a href="#" id="create-account-btn" class="text-violet">Create an account</a></p>
+                            <a href="#" id="forgot-password-btn" class="text-violet">Forgot Password</a>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="sign-up-form" style="display: none;">
+                    <img src="images/sign-up.png" class="mt-5" width="300px">
+                    <h1 class="text-violet">Sign Up</h1>
+                    <div class="row mt-4">
+                        <div class="offset-md-2 col-md-8">
+                            <form action="" method="post">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Confirm Password" aria-label="Password">
+                                </div>
+                                <button type="submit" name="sign-up" class="btn btn-violet btn-block">SIGN UP</button>
+                            </form>
+                            <p><span class="text-light-violet">Already have an account</span> <a href="#" id="sign-in-btn" class="text-violet">Sign In</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="forgot-password-form" style="display: none;">
+                    <img src="images/forgot-password.png" class="mt-5" width="300px">
+                    <h1 class="text-violet">Forgot Password</h1>
+                    <div class="row mt-4">
+                        <div class="offset-md-2 col-md-8">
+                            <form action="" method="post">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                                </div>
+                                <button type="submit" name="forgot-password" class="btn btn-violet btn-block">RESET</button>
+                            </form>
+                            <p><span class="text-light-violet">Already have an account</span> <a href="#" id="sign-in-btn2" class="text-violet">Sign In</a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/fcfd8b4814.js"></script>
+
+    <script>
+        $('#create-account-btn').click(function() {
+            $("#sign-in-form").hide();
+            $("#sign-up-form").fadeIn();
+        });
+
+        $('#sign-in-btn').click(function() {
+            $("#sign-up-form").hide();
+            $("#forgot-password-form").hide();
+            $("#sign-in-form").fadeIn();
+        });
+
+        $('#sign-in-btn2').click(function() {
+            $("#forgot-password-form").hide();
+            $("#sign-in-form").fadeIn();
+        });
+
+        $('#forgot-password-btn').click(function() {
+            $("#sign-in-form").hide();
+            $("#forgot-password-form").fadeIn();
+        });
+    </script>
+
+
+</body></html>
